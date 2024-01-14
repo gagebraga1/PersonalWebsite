@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name= "description" content= "This is a personal websites designated to Gage Braga"/>
+    <title>Gage Braga/Personal Website</title>
+  
+</head>
+  <style>
+        body {
+          background-color: black;
+          color: white;
+          margin: 0;
+          padding: auto;
+          text-align: left;
+        }
+        header {
+          background-image: url(images/bannerbackground.jpg);
+          padding: 1px;
+        }
+        h1,
+        h2,
+        h3 {
+          margin: 10;
+        }
+        h1 {
+          text-align: center;
+        }
+        .displaylarger {
+            font-size: 200%;
+        }
+        .container {
+          width: auto;
+          margin:  auto;
+          padding-left: 2px;
+          text-align: left;
+          align-self: normal;
+        }
+        .container a:hover,
+        .project a:hover,
+        footer a:hover, nav a:hover, .about a:hover {
+          text-decoration: underline;
+        }
+        
+        .about a {
+          color: blue;
+        }
+        
+        .project {
+          background-color: white;
+          color: black;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+        }
+        .project h3 {
+          color: black;
+        }
+        .project a {
+          text-decoration: none;
+          color: blue;
+          font-weight: bold;
+        }
+  
+        footer {
+          background-color: blue;
+          text-align: center;
+          padding: 10px 0;
+        }
+        footer a {
+          color: white;
+          text-decoration: none;
+          margin: 10px;
+        }
+        .displaylarge {
+          font-size: 17px;
+        }
+        li {
+          position: relative;
+          list-style: none;
+          width: 130px;
+          padding: 5px;
+          background: gray;
+          z-index: calc(1 * var(--i));
+          transition: 0.5s;
+        }
+        li:hover {
+          background: blue;
+          transform: translateX(-50px);
+        }
+        li:before {
+         font-family: "FontAwesome";
+         color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         content: attr(data-icon);
+         position: absolute;
+         top: 0;
+         left: 0px;
+         width: 16px;
+         height: 100%;
+         background: gray;
+         transform-origin: right;
+         transition: 0.5s;
+        }
+        li:hover::before {
+          background: lightblue;
+        }
+        li:hover::after {
+          background: lightblue;
+        }
+        li a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          transition: 0.5s;
+        }
+        li:hover a {
+          color: #fff;
+        }
+  </style>
+   
+   
+           
+   <header> 
+            <span class= "displaylarger"><h1>Gage Braga</h1></span>
+   </header>
+    <div class="container">
+    <body>
+      <nav>
+      </ul>
+         <li style="--i:4;" data-icon="&#x2302">
+            <a href="#Home">H Home</a>
+            </li>
+        <li style="--i:3;" data-icon="&#128100">
+          <a href="#About">A About</a>
+        </li>
+        <li style="--i:2;" data-icon="&#128187">
+          <a href="#projects">P Projects</a>
+        </li>
+        <li style="--i:1;" data-icon="&#x40">
+          <a href="#contact">C Contact Me</a>
+        </li>
+      </ul>  
+    </nav>
+ 
+      <div class="about">
+      <h2 id="About"> About Me</h2>
+      <p>
+        Welcome to my personal webpage! My name is Gage Braga, i'm passionate
+        about coding, and here you can learn more about me.
+      </p>
+    <h3>General Information</h3>
+      <p>I am 18 years old and live in Oroville CA. 
+        I am currently in high school and have a job in the Caretaker feild. 
+        I am in a commited relationship of two years.  
+        </p>
+        <h3>Education</h3>
+        <p>
+          I attend both Las Plumas High school and Butte College through the College Connection program.
+          This program allows me to take Butte College cources on the Butte College campus 
+          while in my senior year of high school. 
+          </p>
+          <p>
+            Through this progrma I have persued my computer science
+          goals and taken preperary college cources for my computer sceince major.
+          </p>
+        
+        <!-- Add more information here -->
+      
+      <a href="images/pfp.JPG" target="_blank">See me here</a>
+      </div>
+      <h2 id="projects"> My Projects</h2>    
+    
+      <div class="project">
+        <h3>Path Finder</h3>
+        <p>
+          This project creates an animated visualization of finding a path
+          through a maze from the starting point 'O' to the ending point 'X'. It
+          highlights the path in red and updates the terminal to show the
+          exploration process.
+        </p>
+        <a href="https://github.com/gagebraga1/Path-Finder.git" target="_blank"
+          >View in GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>In Progress</h3>
+        <p>
+          This project is currently in progress and will be updated here when
+          completed.
+        </p>
+        <a href="#">View in GitHub</a>
+      </div>
+
+      <!-- Add more projects here -->
+    </div>
+    </body>
+    <footer id="contact">
+      <a href="https://github.com/gagebraga1" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/gage-braga-tt77/" target="_blank"
+        >LinkedIn</a>
+      <a href="#">Return To Top</a>
+    </footer>
+  
+</html>
